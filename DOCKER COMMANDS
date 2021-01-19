@@ -1,0 +1,27 @@
+Docker Container list:
+
+>docker container ls
+
+Docker image list:
+
+>docker image ls
+
+To list all containers:
+
+>docker container ls -a
+
+To remove container:
+
+>docker container rm CONTAINER id
+
+>docker container rm $(docker container ls -aq)
+
+Start & Stop
+
+>docker container start & stop docker id
+
+To run container in detach from 
+
+>docker container run -d image_name 
+
+Docker container run -it ubuntu /bin/bash
