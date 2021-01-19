@@ -1,0 +1,5 @@
+Enter into command mode of running container:
+
+>docker container exec -it 65 /bin/bash
+
+docker container exec -it vigilant_borg bash
