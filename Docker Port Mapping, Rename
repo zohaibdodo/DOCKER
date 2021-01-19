@@ -1,0 +1,13 @@
+>docker container run -d -p 3600:80 --name test_web1 nginx
+
+To run a container in interactive mode:
+
+>docker container exec -it container_ID /bin/bash
+
+To rename a Container:
+
+>docker container rename container_ID
+
+To restart a Container:
+
+>docker container restart container_ID
