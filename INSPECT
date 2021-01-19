@@ -1,0 +1,1 @@
+>docker container inspect container_id 
