@@ -25,3 +25,27 @@ To run container in detach from
 >docker container run -d image_name 
 
 Docker container run -it ubuntu /bin/bash
+
+Enter into command mode of running container:
+
+>docker container exec -it 65 /bin/bash
+
+docker container exec -it vigilant_borg bash
+
+>docker container inspect container_id 
+
+To run bash from Ubuntu image
+
+>docker containter run -it ubuntu /bin/bash
+
+To run container in background
+
+Ctrl + p + q
+
+>docker container rm $(docker container ls -aq)
+
+#docker build -t first-docker-app .
+ #docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
+
+#sudo apt-get install git
+#git clone https://github.com/aamirpinger/docker-slide-code.git
