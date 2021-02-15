@@ -1,0 +1,33 @@
+***Docker On Windows***
+
+Download docker from Hub.docker.com
+
+Switch to Windows Containers
+
+***Docker on Ubuntu***
+
+sudo apt install docker.io -y
+sudo systemctl enable --now docker
+sudo usermod -aG docker zohaib
+docker –version
+
+***Docker on Fedora***
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io
+
+
+Create a docker ID at Docker Hub
+
+Login with docker ID and password
+
+#docker login
+Username : zohaibdodo
+Password :  you are well aware
+
+
+	1. Prepare a project may be a html, nodejs etc.
+	2. Define a container with dockerfile.
+	3. Build and test your image.
+	4. Run your image as a container.
