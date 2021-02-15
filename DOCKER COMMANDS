@@ -1,32 +1,32 @@
-Docker Container list:
+***Docker Container list:***
 
 >docker container ls
 
-Docker image list:
+***Docker image list:***
 
 >docker image ls
 
-To list all containers:
+***To list all containers:***
 
 >docker container ls -a
 
-To remove container:
+***To remove container:***
 
 >docker container rm CONTAINER id
 
 >docker container rm $(docker container ls -aq)
 
-Start & Stop
+***Start & Stop***
 
 >docker container start & stop docker id
 
-To run container in detach from 
+***To run container in detach from ***
 
 >docker container run -d image_name 
 
 Docker container run -it ubuntu /bin/bash
 
-Enter into command mode of running container:
+***Enter into command mode of running container:***
 
 >docker container exec -it 65 /bin/bash
 
@@ -34,11 +34,7 @@ docker container exec -it vigilant_borg bash
 
 >docker container inspect container_id 
 
-To run bash from Ubuntu image
-
->docker containter run -it ubuntu /bin/bash
-
-To run container in background
+***To run container in background***
 
 Ctrl + p + q
 
