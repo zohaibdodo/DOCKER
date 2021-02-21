@@ -9,7 +9,7 @@ Switch to Windows Containers
 sudo apt install docker.io -y
 sudo systemctl enable --now docker
 sudo usermod -aG docker zohaib
-docker –version
+docker --version
 
 ***Docker on Fedora***
 
