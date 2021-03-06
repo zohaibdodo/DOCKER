@@ -4,13 +4,6 @@ Download docker from Hub.docker.com
 
 Switch to Windows Containers
 
-***Docker on Ubuntu***
-
-sudo apt install docker.io -y
-sudo systemctl enable --now docker
-sudo usermod -aG docker zohaib
-docker --version
-
 ***Docker on Fedora***
 
 sudo dnf -y install dnf-plugins-core
