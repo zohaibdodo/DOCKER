@@ -56,6 +56,15 @@ docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
 
 docker container run -d --name docker_app -p 5010:80 aamirpinger/flag
 
+#To push image to Registry/Docker Hub:
+
+1) Either give your registry user name while creating a container.
+2) Use tag command 
+
+docker tag alpine zohaibdodo/alpine
+
+docker image push zohaibdodo/alpine
+
 #To download GIT 
 
 sudo apt-get install git
