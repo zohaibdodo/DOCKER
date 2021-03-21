@@ -1,47 +1,62 @@
-***Docker Container list:***
+#Show Docker container list or running containers:
 
->docker container ls
+docker container ls
 
-***Docker image list:***
+#Show Docker image list:
 
->docker image ls
+docker image ls
 
-***To list all containers:***
+#To list all containers including stopped ones:
 
->docker container ls -a
+docker container ls -a
 
-***To remove container:***
+#To remove container:
 
->docker container rm CONTAINER id
+docker container rm CONTAINER id
 
->docker container rm $(docker container ls -aq)
+docker container rm $(docker container ls -aq)
 
-***Start & Stop***
+#Start & Stop
 
->docker container start & stop docker id
+docker container start docker id
 
-***To run container in detach from ***
+docker container stop docker id
 
->docker container run -d image_name 
+#To run container in detach mode from image:
+
+docker container run -d image_name 
+
+#To run container in interactive mode from image:
 
 Docker container run -it ubuntu /bin/bash
 
-***Enter into command mode of running container:***
+#Enter into command mode of running container:
 
->docker container exec -it 65 /bin/bash
+docker container exec -it 65 /bin/bash
 
 docker container exec -it vigilant_borg bash
 
->docker container inspect container_id 
+#To inspect:
 
-***To run container in background***
+docker container inspect container_id
+
+#To run container in background:
 
 Ctrl + p + q
 
->docker container rm $(docker container ls -aq)
+#To build new container from file:
 
-#docker build -t first-docker-app .
- #docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
+docker build -t first-docker-app .
 
-#sudo apt-get install git
-#git clone https://github.com/aamirpinger/docker-slide-code.git
+#To publish container with port number:
+
+docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
+
+#To give customize name to the container:
+
+docker container run -d --name docker_app -p 5010:80 aamirpinger/flag
+
+#To download GIT 
+
+sudo apt-get install git
+git clone https://github.com/aamirpinger/docker-slide-code.git
