@@ -1,62 +1,62 @@
-#Show Docker container list or running containers:
+#####Show Docker container list or running containers:
 
 docker container ls
 
-#Show Docker image list:
+#####Show Docker image list:
 
 docker image ls
 
-#To list all containers including stopped ones:
+#####To list all containers including stopped ones:
 
 docker container ls -a
 
-#To remove container:
+#####To remove container:
 
 docker container rm CONTAINER id
 
 docker container rm $(docker container ls -aq)
 
-#Start & Stop
+####Start & Stop
 
 docker container start docker id
 
 docker container stop docker id
 
-#To run container in detach mode from image:
+#####To run container in detach mode from image:
 
 docker container run -d image_name 
 
-#To run container in interactive mode from image:
+#####To run container in interactive mode from image:
 
 Docker container run -it ubuntu /bin/bash
 
-#Enter into command mode of running container:
+#####Enter into command mode of running container:
 
 docker container exec -it 65 /bin/bash
 
 docker container exec -it vigilant_borg bash
 
-#To inspect:
+#####To inspect:
 
 docker container inspect container_id
 
-#To run container in background:
+#####To run container in background:
 
 Ctrl + p + q
 
-#To build new container from file:
+#####To build new container from file:
 
 docker build -t first-docker-app .
 
-#To publish container with port number:
+#####To publish container with port number:
 
 docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
 
-#To give customize name to the container:
+#####To give customize name to the container:
 
 docker container run -d --name docker_app -p 5010:80 aamirpinger/flag
 
-#To push image to Registry/Docker Hub:
+#####To push image to Registry/Docker Hub:
 
 1) Either give your registry user name while creating a container.
 2) Use tag command 
@@ -65,7 +65,19 @@ docker tag alpine zohaibdodo/alpine
 
 docker image push zohaibdodo/alpine
 
-#To download GIT 
+#####DOCKER HISTORY:
+
+docker history image_name
+
+#####DOCERK INSPECT:
+
+docker inspect image_name
+
+#####DOCERK BIND MOUNT:
+
+docker run -it --name=dodo_container -v /home/zohaib/Shared_Folder:/tmp image_name sh
+
+#####To download GIT 
 
 sudo apt-get install git
 git clone https://github.com/aamirpinger/docker-slide-code.git
