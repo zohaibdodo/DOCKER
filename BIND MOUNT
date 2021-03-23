@@ -1,1 +1,0 @@
->docker run -it --name=dodo_container -v /home/zohaib/Shared_Folder:/tmp image_name sh
