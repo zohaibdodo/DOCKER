@@ -1,12 +1,12 @@
-#####Show Docker container list or running containers:
+#####SHOW DOCKER CONTAINER LIST OR RUNNING CONTAINERS:
 
 docker container ls
 
-#####Show Docker image list:
+#####SHOW DOCKER IMAGE LIST:
 
 docker image ls
 
-#####To list all containers including stopped ones:
+#####TO LIST ALL CONTAINERS INCLUDING STOPPED ONES:
 
 docker container ls -a
 
@@ -69,13 +69,35 @@ docker image push zohaibdodo/alpine
 
 docker history image_name
 
-#####DOCERK INSPECT:
+#####DOCKER INSPECT:
 
 docker inspect image_name
 
-#####DOCERK BIND MOUNT:
+#####DOCKER BIND MOUNT:
 
 docker run -it --name=dodo_container -v /home/zohaib/Shared_Folder:/tmp image_name sh
+
+####DOC
+
+docker container run -d -p 3600:80 --name test_web1 nginx
+
+To run a container in interactive mode:
+
+>docker container exec -it container_ID /bin/bash
+
+To rename a Container:
+
+>docker container rename container_ID
+
+To restart a Container:
+
+>docker container restart container_ID
+
+
+
+
+
+
 
 #####To download GIT 
 
