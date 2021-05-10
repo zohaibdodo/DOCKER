@@ -22,6 +22,18 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+*******************************************************Docker for Kali Linux******************************************
+
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable docker --now
+docker
+
+
+
+
+
+
 Create a docker ID at Docker Hub
 
 Login with docker ID and password
