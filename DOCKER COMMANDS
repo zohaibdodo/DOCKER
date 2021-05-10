@@ -1,6 +1,6 @@
 SHOW DOCKER CONTAINER LIST OR RUNNING CONTAINERS:
 
-docker container ls
+    docker container ls
 
 SHOW DOCKER IMAGE LIST:
 
@@ -44,7 +44,7 @@ TO RUN CONTAINER IN BACKGROUND:
 
 Ctrl + p + q
 
-To build new container from file:
+TO BUILD NEW CONTAINER FROM FILE:
 
 docker build -t first-docker-app .
 
