@@ -1,0 +1,100 @@
+## SHOW DOCKER CONTAINER LIST OR RUNNING CONTAINERS:
+
+docker container ls
+
+## TO LIST ALL CONTAINERS INCLUDING STOPPED ONES:
+
+docker container ls -a
+
+## SHOW DOCKER IMAGE LIST:
+
+docker image ls
+
+## TO REMOVE CONTAINER:
+
+docker container rm CONTAINER id
+
+docker container rm $(docker container ls -aq)
+
+## START & STOP
+
+docker container start docker id
+
+docker container stop docker id
+
+## TO RUN CONTAINER IN DETACH MODE FROM IMAGE:
+
+docker container run -d image_name 
+
+## TO RUN CONTAINER IN INTERACTIVE MODE FROM IMAGE:
+
+docker container run -it ubuntu /bin/bash
+
+## ENTER INTO COMMAND MODE OF RUNNING CONTAINER:
+
+docker container exec -it 65 /bin/bash
+
+docker container exec -it vigilant_borg bash
+
+## TO INSPECT:
+
+docker container inspect container_id
+
+## TO RUN CONTAINER IN BACKGROUND:
+
+Ctrl + p + q
+
+## TO BUILD NEW CONTAINER FROM FILE:
+
+docker build -t first-docker-app .
+
+## TO PUBLISH CONTAINER WITH PORT NUMBER:
+
+docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
+
+## TO GIVE CUSTOMIZE NAME TO THE CONTAINER:
+
+docker container run -d --name docker_app -p 5010:80 aamirpinger/flag
+
+## TO PUSH IMAGE TO REGISTRY/DOCKER HUB:
+
+1) Either give your registry user name while creating a container.
+2) Use tag command 
+
+docker tag alpine zohaibdodo/alpine
+
+docker image push zohaibdodo/alpine
+
+## DOCKER HISTORY:
+
+docker history image_name
+
+## DOCKER INSPECT:
+
+docker inspect image_name
+
+## DOCKER BIND MOUNT:
+
+docker run -it --name=dodo_container -v /home/zohaib/Shared_Folder:/tmp image_name sh
+
+## DOC
+ 
+docker container run -d -p 3600:80 --name test_web1 nginx
+
+## To run a container in interactive mode:
+
+docker container exec -it container_ID /bin/bash
+
+## To rename a Container:
+
+docker container rename container_ID
+
+## To restart a Container:
+
+docker container restart container_ID
+
+
+**TO DOWNLOAD GIT:
+
+sudo apt-get install git
+git clone https://github.com/aamirpinger/docker-slide-code.git

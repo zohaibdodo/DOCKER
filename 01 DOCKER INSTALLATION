@@ -1,0 +1,34 @@
+**Docker On Windows**
+
+Download docker from Hub.docker.com
+
+Switch to Windows Containers
+
+**Docker on Fedora**
+
+dnf -y install dnf-plugins-core
+dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+dnf install docker-ce docker-ce-cli containerd.io
+
+**Docker for Ubuntu & Kali**
+
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable docker --now
+
+****POST INSTALLATION STEPS****
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+#docker login
+Username : zohaibdodo
+Password :  S*******
+
+1. Prepare a project may be a html, nodejs etc.
+2. Define a container with dockerfile.
+3. Build and test your image.
+4. Run your image as a container.
+1. Prepare a project may be a html, nodejs etc.
+2. Define a container with dockerfile.
+3. Build and test your image.
+4. Run your image as a container.

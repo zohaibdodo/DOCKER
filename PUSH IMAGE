@@ -1,0 +1,6 @@
+docker image push will try and push the image to docker.io/web:latest. However, I don’t have access to the web repository, all of
+my images have to sit within the nigelpoulton second-level namespace. This means we need to re-tag the image to include my Docker ID.
+
+docker image tag web:latest nigelpoulton/web:latest
+
+After changing the tag now you may push 
