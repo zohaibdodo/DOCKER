@@ -7,15 +7,17 @@ docker image ls
 docker container rm CONTAINER id
 docker container rm $(docker container ls -aq)
 
-## START & STOP
+## START/STOP/RESTART/RENAME:
 docker container start docker id
 docker container stop docker id
+docker container rename/restart container_ID
 
 ## TO RUN CONTAINER IN DETACH MODE FROM IMAGE:
 docker container run -d image_name 
 
 ## TO RUN CONTAINER IN INTERACTIVE MODE FROM IMAGE:
 docker container run -it ubuntu /bin/bash
+docker container exec -it container_ID /bin/bash
 
 ## ENTER INTO COMMAND MODE OF RUNNING CONTAINER:
 docker container exec -it 65 /bin/bash
@@ -51,12 +53,6 @@ docker run -it --name=dodo_container -v /home/zohaib/Shared_Folder:/tmp image_na
 
 ## DOC
 docker container run -d -p 3600:80 --name test_web1 nginx
-
-##TO RUN A CONTAINER IN INTERACTIVE MODE:
-docker container exec -it container_ID /bin/bash
-
-## TO RESTART A CONTAINER:
-docker container rename/restart container_ID
 
 ##TO DOWNLOAD GIT:
 sudo apt-get install git
