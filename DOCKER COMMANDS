@@ -17,11 +17,11 @@ docker container run -d image_name
 
 ## TO RUN CONTAINER IN INTERACTIVE MODE FROM IMAGE:
 docker container run -it ubuntu /bin/bash
-docker container exec -it container_ID /bin/bash
 
 ## ENTER INTO COMMAND MODE OF RUNNING CONTAINER:
 docker container exec -it 65 /bin/bash
 docker container exec -it vigilant_borg bash
+docker container exec -it container_ID /bin/bash
 
 ## TO INSPECT:
 docker container inspect container_id
