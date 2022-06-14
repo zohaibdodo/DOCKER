@@ -19,8 +19,8 @@ sudo systemctl enable docker --now
 ****POST INSTALLATION STEPS****
 sudo groupadd docker
 sudo usermod -aG docker $USER
+sudo docker login
 
-#docker login
 Username : zohaibdodo
 Password :  S*******
 
