@@ -57,3 +57,8 @@ docker container run -d -p 3600:80 --name test_web1 nginx
 ##TO DOWNLOAD GIT:
 sudo apt-get install git
 git clone https://github.com/aamirpinger/docker-slide-code.git
+
+#RESTART STOPPED CONTAINER AFTER VM REBOOTED:
+
+docker update --restart always $(docker ps -q)
+
