@@ -1,0 +1,32 @@
+Docker nodes that are not part of a swarm are said to be in single-engine mode.
+
+# To add Docker node on swarm mode:
+
+docker swarm init
+
+# To add a manager to this swarm, run following command:
+
+docker swarm join-token manager
+
+# To check swarm node list:
+
+docker node ls
+
+# To join swarm mode 
+
+docker swarm join --token SWMTKN-1-10piz2kmwyag6co9l8yq0djmzbnqh2rofhnlaayexhs1bpbk4t-6myhjiqunfcq467us14hfm07w 192.168.40.129:2377
+
+When you run docker swarm init command it will show a join link for worker nodes like above.
+
+# To add a manager to this swarm, run the following command:
+
+docker swarm join-token manager; run following command on docker node to make manager.
+
+    docker swarm join --token SWMTKN-1-10piz2kmwyag6co9l8yq0djmzbnqh2rofhnlaayexhs1bpbk4t-d9daamq4brh2usdgm36xf3b8n 192.168.40.129:2377
+
+docker swarm join-token worker; run following command on docker node to make worker.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-10piz2kmwyag6co9l8yq0djmzbnqh2rofhnlaayexhs1bpbk4t-6myhjiqunfcq467us14hfm07w 192.168.40.129:2377
+
