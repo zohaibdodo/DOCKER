@@ -20,7 +20,7 @@ When you run docker swarm init command it will show a join link for worker nodes
 
 # To add a manager to this swarm, run the following command:
 
-docker swarm join-token manager; run following command on docker node to make manager.
+docker swarm join-token manager
 
     docker swarm join --token SWMTKN-1-10piz2kmwyag6co9l8yq0djmzbnqh2rofhnlaayexhs1bpbk4t-d9daamq4brh2usdgm36xf3b8n 192.168.40.129:2377
 
