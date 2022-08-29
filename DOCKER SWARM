@@ -33,3 +33,15 @@ To add a worker to this swarm, run the following command:
 # To show Token for Worker Node:
 
 docker swarm join-token -q worker
+
+
+DOCKER SERVICE:
+
+docker service create --name First_service --replicas 6 -p 80:80 zohaibdodo/first-docker-app
+
+To update:
+
+docker service update First_service
+
+
+if docker image is not found on docker instance then service will not create container on that instance.
