@@ -1,0 +1,10 @@
+STORAGE:
+
+VOLUMES: Space managed by Docker container only
+BIND MOUNT: Store on host machine
+TMPFS: Mount like RAM
+
+VOLUMES:
+#docker volume create volume_name
+#docker volume rm volume_name
+#docker volume prune 
