@@ -14,7 +14,7 @@ docker node ls
 
 # To join swarm mode 
 
-docker swarm join --token SWMTKN-1-10piz2kmwyag6cobpbk4t-6myhjiqunfcq467us14hfm07w 192.168.40.129:2377
+docker swarm join --token token_with_IP_Address 192.168.40.129:2377
 
 When you run docker swarm init command it will show a join link for worker nodes like above.
 
