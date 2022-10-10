@@ -28,7 +28,7 @@ docker swarm join --token ABC-----XYZ 192.168.40.129:2377
 
 To add a worker to this swarm, run the following command:
 
-    docker swarm join --token SWMTKN-1-10piz2kmwyag6co9l8yq0djmzbnqh2rofhnlaayexhs1bpbk4t-6myhjiqunfcq467us14hfm07w 192.168.40.129:2377
+    docker swarm join --token token_with_IP_Address
 
 # To SHOW Token for Worker Node:
 
