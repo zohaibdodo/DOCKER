@@ -1,0 +1,158 @@
+https://github.com/Ameen-Alam/CKAD-exercises
+
+
+
+
+docker run -d -P nginx    # -P is for random port, we run command without port
+
+docker events
+docker inspect
+docker logs 68 -f
+docker kill 
+docker image prune
+docker container --help
+docker image --help
+docker run --hostname
+docker run --user
+
+docker pause
+
+docker events
+
+RHCOS
+
+docker tag image_ID newimagename:tag    #IF your repo name is empty
+
+Difference b/w RUN and CMD as we use RUN command while building image.
+When CMD is given is given like ["echo", "Lets Learn"] then it can be overright while running docker container through  that image.
+In case of ENTRYPOINT, the entrypoint will not be changed but you may append the same.
+
+Node JS Application:
+
+
+https://medium.com/@adnanrahic/hello-world-app-with-node-js-and-express-c1eb7cfa8a30
+
+
+To create a Node JS Dockerfile: [WITH CMD]
+
+FROM node
+LABEL deployedBy="Zohaib Ahmed"
+WORKDIR /app
+COPY . /app
+RUN npm i
+ENV environment=deplopment
+EXPOSE 3000
+CMD ["node", "app"]
+
+To create a Dockerfile: [WITH ENTRYPOINT]
+
+FROM NPM
+COPY . /app
+WORKDIR /app
+RUN npm i
+EXPOSE 3000
+CMD ["app.js"]
+ENTRYPOINT ["node"]
+
+
+
+NODEJS INSTALLATION:
+
+sudo apt install update && sudo apt upgrade -y
+sudo apt install nodejs
+sudo apt install npm -y
+
+
+FROM alpine
+CMD ["sleep 20"] 
+
+
+FROM alpine
+RUN echo Hello
+
+
+FROM alpine
+CMD ["echo", "Hello"]
+
+If we provide a argument while running docker build command it will overwrite it 
+
+FROM alpine
+CMD ["echo"
+
+IF YOU USE ENTRYPOINT THEN IT WILL DEFINITELY RUN ENTRYPOINT COMMAND LIKEWISE CMD COMMAND WILL OVERWRITE WITH AN ARGUMENT.
+
+ENVIRONMENT VARIABLE:
+
+Wi-Fi uit91258
+
+
+
+uptime (-s since, -p pretty, -v version)
+
+uname -srv or -a (-s, --kernel-name
+                  -n, --nodename
+                  -r, --kernel-release
+                  -v, --kernel-version
+                  -m, --machine
+                  -p, --processor
+                  -i, --hardware-platform
+                  -o, --operating-system
+
+find / -name "linux*" 
+find ./ -iname INTRO    #For case insensitive
+find / -type d -name notes. txt
+
+whatis "df"
+df -hT
+df -hTx tmpfs (To exclude tmps fs)
+du /home/zohaib -sh (with summery and human readable)
+apt-cache search keyword
+
+Ctrl+r (reverse-i-search)
+
+info "Show online information"
+
+type -a pwd (Command/buildin/keyword)
+whereis 
+wc (line words total character)
+
+
+
+cal
+cal -y 2020
+dd conv=ucase (for conversion upper case) Ctrl+dd
+dd if=xyz.txt of=zohaib.txt conv=ucase
+
+grep -n fahad names.txt (for line number)
+cut 
+
+bc (Basic Calculator) use scale for number of digits
+
+copy text from one file to other file with dd command
+
+
+use --rm in job to remove job after completion
+
+SCM vs Jenkins vs Jira vs Artifactory
+
+Azure DevOps --- TFS Team Foundation System
+
+mongodb    mongo compass
+
+cd .kube/
+
+kubectl get pods
+kubectl get pods -w     # For watch mode
+kubectl port-forward mypod 
+kubectl expose pod mypod --port=8003 --target-port=80 --type=LoadBalancer
+kubectl run mypod4 --image=mangodb --port=27017
+
+kubectl describe pod mypod
+
+docker image built -t website:v1  # where -t is the tag 
+
+
+sudo docker stats   # For container stats and resource utilization
+
+
+Nigel Poulton Github (PSWEB) for node JS application
