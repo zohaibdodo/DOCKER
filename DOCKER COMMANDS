@@ -62,3 +62,4 @@ git clone https://github.com/aamirpinger/docker-slide-code.git
 
 docker update --restart always $(docker ps -q)
 
+docker save zohaibdodo/first-docker-app > image.tar
