@@ -14,10 +14,7 @@ docker container --help
 docker image --help
 docker run --hostname
 docker run --user
-
 docker pause
-
-docker events
 
 RHCOS
 
