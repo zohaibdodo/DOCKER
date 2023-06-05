@@ -68,3 +68,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 sudo systemctl enable --now containerd.service
+
+docker context ls 
+docker context use default 
